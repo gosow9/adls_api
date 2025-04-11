@@ -1,0 +1,11 @@
+- pipeline_name: "pipeline1"
+  type: "replicator"
+  sql_path: "path/to/my_sql.sql"
+  dataset_type: "transactional"
+  partition_key: "asofdate"
+  target_format: "parquet"
+
+- pipeline_name: "pipeline2"
+  type: "custom_type"    # Potentially your own pipeline type
+  param1: "value1"
+  param2: "value2"
